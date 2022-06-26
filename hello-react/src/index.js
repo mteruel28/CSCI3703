@@ -2,15 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
+let city = { 
+  name: "New York",
+  country: "United States"};
+
 ReactDOM.render(
-  React.createElement("h1",null,"Hello!"),
-  document.getElementById("root")
+ <h1>{city.name} is in {city.country}</h1>>
+ document.getElementById("root")
 );
-//const root = ReactDOM.createRoot(document.getElementById('root'));
-//root.render(
- // <React.StrictMode>
-    //<App />
- /// </React.StrictMode>
-//);
+
 
 
