@@ -66,3 +66,6 @@ h2{color: green;}
 */
 
 /*Cascading
+reads top down
+!important - overrides style declaration
+*/

@@ -1,3 +1,7 @@
+body{
+    color: #343434;
+}
+
 img{
     width: 300px
 }
@@ -5,3 +9,21 @@ img{
 /* img is a selector - determines which html elements styles are applied too
 width snippet is a declaration box - declarations style indicated in the bracket */
 
+
+/* profile */
+header{
+    background: #2f3061;
+}
+
+/*projects*/
+.projects{
+    background: #a1c6d8;
+}
+
+/*education*/
+
+
+/*contact info*/
+footer{
+    background: #343434;
+}
