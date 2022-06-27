@@ -19,6 +19,13 @@ header{
 .projects{
     background: #a1c6d8;
 }
+.projects{
+    height: 29%;
+    width: 90%;
+    border: 17px dotted red;
+    padding: 15px 37px 22px;
+    margin: 55px 56px;
+  }
 
 /*education*/
 
@@ -26,4 +33,13 @@ header{
 /*contact info*/
 footer{
     background: #343434;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.content-wrap{
+    width:800px
+    margin:0  auto;
 }
