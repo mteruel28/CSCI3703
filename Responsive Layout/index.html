@@ -31,3 +31,15 @@ div{ //creates the unit
     width:50vmin // 1/100 of smaller size of view port
     height:50vmin
 }
+//media queries
+@media(min-width:600px){
+    body {background-color:red;
+    }
+}
+//creating a grid
+.container{
+    display: grid;
+    grid-template-columns :300px 500px
+    grid-template-rows 200px 50px 100px
+    grid-gap :20px 10px //puts gap in the items
+}
