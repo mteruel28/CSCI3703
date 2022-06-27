@@ -1,0 +1,68 @@
+/* <length> datatype is used in absolute and relative
+absolute length is same size
+relative length depends on parent values
+*/
+
+/* function values
+function name followed by parenthesis
+
+example rotate();
+calc();
+url();
+
+*/
+
+/*Color properties 
+
+color reference colours.neilorangepeel.com
+rgb( red, green , blue)
+
+alpha channel uses a in the rgb() , like rgba() , this adjusts opacity level based on given percentage
+
+hsl() - hue/angle , saturation/percentage , lightness/percentage
+
+*/
+
+/* VERY Important, Class selector 
+class
+begin with (.)
+<p class="dog">dogparagraph/>
+<p> I am a doggo </p>
+
+.dog{
+    font-style: bold;
+}
+id selector, defines values
+begin with #
+*/
+
+/* PRACTICE class selector,id selector 
+HTML PORTION
+<h1> class= "Dog Paradise" >Heading</h1>
+<h2 class= "dog1 dog2" > Subheading</h2>
+<p> I am a funny dog and I like to play with my friends</p>
+<h2 Sub-heading </h2>
+<p> I am a funny dog and I like to play with my friends</p>
+
+*/
+/* CSS PORTION 
+{color: blue;
+}
+h1{ color: pink;}
+h2{color: green;}
+.dog1{ color:brown;}
+.DogParadise{
+    background:orange;}
+.dog1.dog2{font-size: 55px;}  
+#dog paradise{ font-size } 
+*/
+
+
+/* Inheritance
+1. universal(*)
+2.type(p)
+3.class(.example)
+4. id(#example)
+*/
+
+/*Cascading
