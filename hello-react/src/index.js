@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ useState ,useEffect} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
@@ -87,3 +87,102 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
+function App4(){
+  const[year,setYear]= useState(2030);
+  const[manager,setManager] = useState("Miguel")
+  const[status,setStatus] =useState("Open");
+  return(
+    <>
+    <div>
+      <h1>{year}</h1>
+      <button
+      onClick={() => setYear(year + 1)}
+      >New Year! </button>
+    </div>
+    <div>
+      <div>
+      <h1>Manager on Duty: {manager}</h1>
+      <button 
+      onClick={() => setManager("Rachel")}
+      ></button>
+      </div>
+      <h1>Status: {status}</h1>
+      <button onClick={() => setStatus("Open")}>
+        Open
+      </button>
+      <button onClick={() => setStatus("Back in 5")}>
+        Break
+      </button>
+      <button onClick={() => setStatus("Closed")}>
+        Closed
+      </button>
+    </div>
+    </>
+  )
+}
+
+React.Dom.render(
+  <App4/>,
+  document.getElementById("root")
+);
+
+function Checkbox() {
+  const[checked,setChecked] =useState(false)
+  useEffect(()=> {
+  //alert('checked: ${checked.toString()}');
+  });
+  return(
+    <>
+    <input 
+    type ="checkbox"
+     value ={checked}
+     onChange={() => setChecked(checked => !checked)}
+     />
+    {checked ? "checked" : "not checked"}
+    </>
+  )
+}
+
+ReactDOM.render(
+<Checkbox />,
+document.getElementById("root")
+);
+
+function App5(){
+  const[val,setVal] =useState("");
+  const[val2,setVal2] =useState("");
+
+useEffect(()=> {
+// eslint-disable-next-line no-template-curly-in-string
+console.log('field 1: ${val}');
+}, [val]);
+useEffect(()=> {
+  // eslint-disable-next-line no-template-curly-in-string
+  console.log('field 2: ${val2}');
+  },[val,val2]);
+
+  return(
+<>
+<label>
+  Favorite Phrase:
+  <input 
+  value={val}
+  OnChange={e => setVal(e.target.value)}
+  />
+</label>
+<br />
+<label>
+  Favorite Phrase:
+  <input 
+  value={val2}
+  OnChange={e => setVal2(e.target.value)}
+  />
+</label>
+</>
+  );
+}
+
+ReactDOM.render(
+<App5/>,
+document.getElementById("root")
+);
