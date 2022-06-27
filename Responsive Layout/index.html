@@ -39,7 +39,40 @@ div{ //creates the unit
 //creating a grid
 .container{
     display: grid;
-    grid-template-columns :300px 500px
+    grid-template-columns : 1fr 100px 1fr
     grid-template-rows 200px 50px 100px
     grid-gap :20px 10px //puts gap in the items
+    justify-content: auto;
+    min-height: 90vh
+    align-content: center;
+    justify-self: start;
+    grid-template-areas:
+    " red blue"
+    "green pink"
+}
+
+grid-column- start //sets start of horizontal location of grid
+grind-column-end //sets end of horizontal location of grid
+grind-column // short for both start and end
+grind-row // follows same procedure
+
+//aligning tracks
+justify-content //aligns grid with the grid container, meaning grid is adjusted to fit within or set around the grid container
+align-content // does same a justify-content, but changes vertical axis
+justify-self // adjusts one grid item horizontally
+align-self // adjust one grid item vertcally
+
+grid-template-areas - names cells on grid
+
+//creating flexbox
+.container{
+display: flex;
+min-height: 100px
+flex-direction; - changes direction of flexbox
+flex-wrap: wrap; - keeps flexbox within the width range
+flex-flow -shortcut for both direction and wrap
+}
+
+.item{
+    width:200 px
 }
