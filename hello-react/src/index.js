@@ -18,9 +18,14 @@ let city = {
   country: "United States"};
 
 ReactDOM.render(
-<><Hello library="React" message= "have fun" number ={3}/>
-  <h1 id="heading" className="cool-text">
-    {city.name} is in {city.country}
-  </h1>,
+<h1 id ="heading" className="cool-text">
+{city.name is in {city.country}}
+</h1>,
+
+<><Hello  
+library="React" 
+message= "have fun" 
+number ={3}
+/>,
  document.getElementById("root")
 );
