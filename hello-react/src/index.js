@@ -13,16 +13,8 @@ function Hello(props) {
   )
 }
 
-let city = { 
-  name: "New York",
-  country: "United States"};
-
 ReactDOM.render(
-<h1 id ="heading" className="cool-text">
-{city.name is in {city.country}}
-</h1>,
-
-<><Hello  
+<Hello
 library="React" 
 message= "have fun" 
 number ={3}
